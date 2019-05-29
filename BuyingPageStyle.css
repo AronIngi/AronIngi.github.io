@@ -1,0 +1,218 @@
+body
+{	
+	height:100%;
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+
+body::-webkit-scrollbar {
+    width: 0px;
+}
+
+#body
+{
+	background-color:rgb(240,240,240);
+	width:53.2%;
+	height:87vh;
+	position:absolute;
+	top:10vw;
+	bottom:3vw;
+	right:50%;
+	margin:auto;
+	
+	transform:translate(50%, 0%);
+}
+
+#navigationBar
+{
+	background-color:rgb(0,0,0);
+	position:absolute;
+	top:0;
+	right:0;
+	left:0;
+}
+
+#logo
+{	
+	width:4.5%;
+	position: relative;
+	top: 50%;
+	left: 50%;
+  
+	transform: translate(-50%, 0%);
+
+}
+
+#backButton
+{
+	position:absolute;
+	width:12%;
+	top:0;
+	right:2%;
+}
+
+a
+{
+	text-decoration:none;
+}
+
+#backButton h1
+{	
+	font-family:helvetica;
+	font-size:2.5vw;
+	color:white;
+	position: relative;
+	top: 50%;
+	left: 50%;
+  
+	transform: translate(-40%, 0%);
+}
+
+#language
+{
+	position:absolute;
+	top:7%;
+	left:0;
+}
+
+#language img
+{
+	width:3.8%;
+	position:relative;
+}
+
+#english
+{	
+	left:6%;
+}
+
+#icelandic
+{
+	left:2%;
+}
+
+#danish
+{
+	left:4%;
+}
+
+#preview
+{	
+	width:60%;
+	position:relative;
+	transform:translate(30%,77%);
+}
+
+#previewImage
+{	
+	width:40%;
+}
+
+
+#sizes
+{
+	position:absolute;
+	top:-1%;
+	left:43%;
+	transform:translate(0%,0%);
+}
+
+#headerText
+{
+	font-size:2vw;
+	position: absolute;
+    top: 3%;
+    left: 27%;
+    transform: translate(50%,50%);
+}
+
+#info
+{
+	position:absolute;
+	top:115%;
+}
+
+#infoText
+{
+	font-size:1.1vw;
+}
+
+#price
+{	
+	position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(0%,0%);
+}
+
+#priceText
+{
+	font-size:2.5vw;
+	font-family:Helvetica;
+}
+
+#small
+{	
+	width:4vw;
+}
+
+#medium
+{
+	width:4vw;
+	position:relative;
+	left:4%;
+	top:1%;
+	right:1%;
+	bottom:1%;
+}
+
+#large
+{
+	width:4vw;
+	position:relative;
+	left:8%;
+}
+
+#rightArrow
+{
+	width:3vw;
+	position:absolute;
+	transform: translate(-15%,201%);
+}
+
+#leftArrow
+{
+	width:3vw;
+	position:absolute;
+    transform: translate(-510%,201%);
+
+}
+
+#rightArrow:hover
+{
+	cursor:pointer;
+}
+
+#leftArrow:hover
+{
+	cursor:pointer;
+}
+
+
+#small:hover
+{
+	content:url(Myndir/SmallDark.png);
+	cursor:pointer;
+}
+
+#medium:hover
+{
+	content:url(Myndir/MediumDark.png);
+	cursor:pointer;
+}
+
+#large:hover
+{
+	content:url(Myndir/LargeDark.png);
+	cursor:pointer;
+}

@@ -1,0 +1,199 @@
+body
+{	
+	height:100%;
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+
+body::-webkit-scrollbar {
+    width: 0px;
+}
+
+#navigationBar
+{
+	background-color:rgb(0,0,0);
+	position:absolute;
+	top:0;
+	right:0;
+	left:0;
+}
+
+#body
+{
+	background-color:rgb(240,240,240);
+	width:53.2%;
+	height:204vh;
+	position:absolute;
+	top:119%;
+	bottom:0%;
+	right:50%;
+	margin:auto;
+	
+	transform:translate(50%, 0%);
+}
+
+
+#logo
+{	
+	width:4.5%;
+	position: relative;
+	top: 50%;
+	left: 50%;
+  
+	transform: translate(-50%, 0%);
+
+}
+
+#backButton
+{
+	position:absolute;
+	width:12%;
+	top:0;
+	right:2%;
+}
+
+a
+{
+	text-decoration:none;
+}
+
+#backButton h1
+{	
+	font-family:helvetica;
+	font-size:2.5vw;
+	color:white;
+	position: relative;
+	top: 50%;
+	left: 50%;
+  
+	transform: translate(-40%, 0%);
+}
+
+#language
+{
+	position:absolute;
+	top:7%;
+	left:0;
+}
+
+#language img
+{
+	width:3.8%;
+	position:relative;
+}
+
+#english
+{	
+	left:6%;
+}
+
+#icelandic
+{
+	left:2%;
+}
+
+#danish
+{
+	left:4%;
+}
+
+#production
+{
+	position:relative;
+	top:6%;
+}
+
+#production p
+{
+	width:90%;
+	font-size:1.1vw;
+	font-family:Helvetica;
+	position:relative;
+	right:-2%;
+}
+
+#production h2
+{
+	font-size:2vw;
+	font-family:Helvetica;
+	position:relative;
+	right:-2%;
+}
+
+#fairTrade
+{
+	position:relative;
+	top:8%;
+}
+
+#fairTrade h2
+{
+	font-size:2vw;
+	font-family:Helvetica;
+	position:relative;
+	right:-2%;
+}
+
+#fairTrade p
+{	
+	width:90%;
+	font-size:1.1vw;
+	font-family:Helvetica;
+	position:relative;
+	right:-2%;
+}
+
+#labour
+{
+	position:relative;
+	top:10%;
+}
+
+#labour h2
+{
+	font-size:2vw;
+	font-family:Helvetica;
+	position:relative;
+	right:-2%;
+}
+
+#labour p
+{	
+	width:90%;
+	font-size:1.1vw;
+	font-family:Helvetica;
+	position:relative;
+	right:-2%;
+}
+
+#introduction
+{
+	position:relative;
+	bottom:-12%;
+}
+
+#introduction h2
+{
+	font-size:2vw;
+	font-family:Helvetica;
+	position:relative;
+	right:-2%;
+}
+
+#introduction h3
+{
+	font-size:1.5vw;
+	font-family:Helvetica;
+	position:relative;
+	right:-2%;
+}
+
+#introduction p
+{
+	font-size:1.1vw;
+	width:90%;
+	font-family:Helvetica;
+	position:relative;
+	right:-2%;
+	
+}

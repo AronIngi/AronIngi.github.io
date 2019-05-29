@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>TC Clothing</title>
+		<link rel="stylesheet" href="BuyingPageStyle.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+	</head>
+	<body onload="onLoadBuying()">
+		
+		<div class="container">
+			<div id="body">	
+				<h1 id="headerText">Blue Hoodie</h1>
+				<div id="preview">
+					<img id="previewImage" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Edmund_McMillen_cropped.jpg/250px-Edmund_McMillen_cropped.jpg">
+					<img id="rightArrow" src="Myndir/BlackArrowRight.png">
+					<img id="leftArrow" src="Myndir/BlackArrowLeft.png">
+					<div id="sizes">
+						<img id="small" src="Myndir/Small.png" onclick="Sizes('Myndir/SmallDark.png')">
+						<img id="medium" src="Myndir/Medium.png" onclick="Sizes('Myndir/MediumDark.png')">
+						<img id="large" src="Myndir/Large.png" onclick="Sizes('Myndir/LargeDark.png')">
+					</div>
+					<div id="price">
+						<h1 id="priceText">20$<h1>
+					</div>
+					<div id="info">
+						<p id="infoText"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container">
+			<div id="navigationBar">
+				<img id="logo" src="Myndir/TCLogo.png">
+				
+				<div id="language">
+					<img id="icelandic" src="Myndir/IcelandFlagCircle.png" onclick="ChangeLanguage(2)">
+					<img id="danish" src="Myndir/DanishFlagCircle.png" onclick="ChangeLanguage(3)">
+					<img id="english" src="Myndir/BritishSlashMuricanFlagCircle.png" onclick="ChangeLanguage(1)">	
+				</div>
+				
+				<a href="index.html">
+					<div id="backButton">
+						<h1 id="backButtonText">Back<h1>
+					</div>
+				</a>
+			</div>
+		</div>
+		<script src="LanguageManager.js"></script>
+		<script src="BuyingManager.js"></script>
+	</body>
+</html>

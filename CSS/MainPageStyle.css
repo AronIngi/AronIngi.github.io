@@ -1,0 +1,246 @@
+body
+{
+	overflow-x:hidden;
+}
+body::-webkit-scrollbar 
+{
+    width: 0px;
+}
+
+a
+{
+	text-decoration:none;
+}
+
+#navigationBar
+{
+	background-color:rgb(0,0,0);
+	position:absolute;
+	top:0;
+	right:0;
+	left:0;
+}
+
+#body
+{
+	background-color: rgb(240,240,240);
+    width: 53.2vw;
+    height: 148vh;
+    position: absolute;
+    top: 58vh;
+    bottom: -2vh;
+    right: 50%;
+    margin: auto;
+    transform: translate(50%, 0%);
+}
+
+#image
+{
+	position:absolute;
+	transform:translate(50%, 0);
+}
+
+#hoodies
+{
+	width: 42vw;
+    position: absolute;
+    top: 8vw;
+    left: 50%;
+    transform: translate(-44%, 0);
+}
+
+#tShirts
+{
+	width: 42vw;
+    position: absolute;
+    bottom: 12vh;
+    left: 50.2%;
+    transform: translate(-44%, 0);
+}
+
+#hoodiesText
+{
+	font-family:Helvetica;
+	font-size:2.2vw;
+	position:relative;
+	right:0.5%;
+	transform:translate(0%, -50%);
+}
+
+#tShirtText
+{
+	font-family:Helvetica;
+	font-size:2.2vw;
+	position:relative;
+	right:0.5%;
+	transform: translate(0%, -500%);
+}
+
+.border
+{
+	background-color:rgb(210,210,210);
+}
+
+#c1B
+{
+	height:33vh;
+    position: absolute;
+    transform: translate(-1%,-9%);
+}
+
+#c2B
+{
+	height:33vh;
+	position: absolute;
+    transform: translate(105%,-9%);
+}
+
+#c3B
+{
+	height:33vh;
+	position: absolute;
+    transform: translate(210%,-9%);
+}
+
+#c4B
+{
+	height:33vh;
+	position: absolute;
+    transform: translate(-17%,116%);
+}
+
+#c5B
+{
+	height:33vh;
+    position: absolute;
+	transform: translate(-1%, -76%);
+}
+
+#c6B
+{
+	height:33vh;
+    position: absolute;
+    transform: translate(105%,-76%);
+}
+
+#cell1
+{	
+	position:relative;
+	width:12vw;
+	left:-20%;
+	transform: translate(20%, 10%);
+}
+
+#cell2
+{
+	position:relative;
+	width:12vw;
+	left:-20%;
+	transform:translate(20%, 10%);
+}
+
+#cell3
+{
+	position:relative;
+	width:12vw;
+	left:-20%;
+	transform:translate(20%, 10%);
+}
+
+#cell4
+{
+	position:relative;
+	width:12vw;
+	left:-20%;
+	transform: translate(20%, 10%);
+}
+
+#cell5
+{
+	position:relative;
+	width:12vw;
+	left:-20%;
+	transform:translate(20%, 10%);
+}
+
+#cell6
+{
+	position:relative;
+	width:12vw;
+	left:-20%;
+	transform:translate(20%, 10%);
+}
+
+#logo
+{	
+	width:4.5%;
+	position: relative;
+	top: 50%;
+	left: 50%;
+  
+	transform: translate(-50%, 0%);
+
+}
+
+#aboutButton
+{
+	position:absolute;
+	width:12%;
+	top:0;
+	right:2%;
+}
+
+#aboutButton h1
+{	
+	font-family:helvetica;
+	font-size:2.5vw;
+	color:white;
+	position: relative;
+	top: 50%;
+	left: 50%;
+  
+	transform: translate(-40%, 0%);
+}
+
+#language
+{
+	position:absolute;
+	top:7%;
+	left:0;
+}
+
+#language img
+{
+	width:3.8%;
+	position:relative;
+}
+
+#english
+{	
+	left:6%;
+}
+
+#icelandic
+{
+	left:2%;
+}
+
+#danish
+{
+	left:4%;
+}
+
+#english:hover
+{
+	cursor:pointer;
+}
+
+#icelandic:hover
+{
+	cursor:pointer;
+}
+
+#danish:hover
+{
+	cursor:pointer;
+}

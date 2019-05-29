@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>TC Clothing</title>
+		<link rel="stylesheet" href="CSS/MainPageStyle.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+	</head>
+	<body onload="onLoadMain()">
+		<div class="container">
+			<div id="body">
+				<div id="images">
+					<div id="hoodies">
+						<h1 id="hoodiesText">Hoodies</h1>
+							<ul class="list-inline">
+								<li class="list-inline-item">
+									<a href="BuyingPage.html">
+										<div id="c1B" class="border">
+											<img id="cell1" class="hoodie" src="Myndir/BlueHoodie.png" onClick="SetClothing('Hoodie')">
+										</div>
+									</a>
+								</li>
+								<li class="list-inline-item">
+									<a href="BuyingPage.html">
+										<div id="c2B" class="border">
+											<img id="cell2" class="hoodie" src="Myndir/YellowHoodie.png" onClick="SetClothing('Hoodie')">
+										</div>
+									</a>
+								</li>
+								<li class="list-inline-item">
+									<a href="BuyingPage.html">
+										<div id="c3B" class="border">
+											<img id="cell3" class="hoodie" src="Myndir/WhiteHoodie.png" onClick="SetClothing('Hoodie')">
+										</div>
+									</a>
+
+								</li>
+								<li class="list-inline-item">
+									<a href="BuyingPage.html">
+										<div id="c4B" class="border">
+											<img id="cell4" class="hoodie" src="Myndir/BlackHoodie.png" onClick="SetClothing('Hoodie')">
+										</div>
+									</a>
+								</li>
+							
+							</ul>
+					</div>
+					<div id="tShirts">
+						<h1 id="tShirtText">T-Shirts</h1>
+						<ul class="list-inline">
+							<li class="list-inline-item">
+								<a href="BuyingPage.html">
+									<div id="c5B" class="border">
+										<img id="cell5" class="tShirt" src="Myndir/WhiteTShirt.png" onClick="SetClothing('TShirt')">
+									</div>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="BuyingPage.html">
+									<div id="c6B" class="border">
+										<img id="cell6" class="tShirt" src="Myndir/BlackTShirt.png" onClick="SetClothing('TShirt')">
+									</div>
+								</a>
+							</li>						
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container">
+			<div id="navigationBar">
+				<img id="logo" src="Myndir/TCLogo.png">
+				
+				<div id="language">
+					<img id="icelandic" src="Myndir/IcelandFlagCircle.png" onclick="ChangeLanguage(2)">
+					<img id="danish" src="Myndir/DanishFlagCircle.png" onclick="ChangeLanguage(3)" >
+					<img id="english" src="Myndir/BritishSlashMuricanFlagCircle.png" onclick="ChangeLanguage(1)">	
+				</div>
+				
+				<a href="AboutPage.html">
+					<div id="aboutButton">
+						<h1 id="aboutButtonText">About Us<h1>
+					</div>
+				</a>
+			</div>
+		</div>
+		<script src="LanguageManager.js"></script>
+		<script src="BuyingManager.js"></script>
+	</body>
+</html>
