@@ -87,6 +87,7 @@ function onLoadBuying()
 	document.getElementById("rightArrow").style.opacity = arrowOpacity;
 	document.getElementById("leftArrow").style.opacity = arrowOpacity;
 	document.getElementById("originalPriceText").style.opacity = onSaleOpacity;
+	document.getElementById("offPercentageB").style.opacity = onSaleOpacity;
 	if(color === "blue" || color === "yellow" || color === "white")
 	{
 		ChangePreviewImage();
