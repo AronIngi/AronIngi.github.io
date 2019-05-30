@@ -116,7 +116,7 @@ function English()
 	if(currentHtmlPage === "index")
 	{
 		document.getElementById("aboutButtonText").innerHTML = "About Us";
-		document.getElementById("hoodiesText").innerHTML = "Hoodies";
+		document.getElementById("HoodiesText").innerHTML = "hoodies";
 		document.getElementById("tShirtText").innerHTML = "T-Shirts";
 	}
 	else if(currentHtmlPage === "About")
