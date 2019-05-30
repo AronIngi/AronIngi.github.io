@@ -82,8 +82,13 @@ function onLoadBuying()
 	color = sessionStorage.getItem("colorKey");
 	ss();
 	arrowOpacity = sessionStorage.getItem("arrowOpacityKey");
+	onSale = sessionStorage.getItem("onSaleKey");
+	onSaleOpacity = sessionStorage.getItem("onSaleOpacityKey");
 	document.getElementById("rightArrow").style.opacity = arrowOpacity;
 	document.getElementById("leftArrow").style.opacity = arrowOpacity;
+	document.getElementById("originalPriceText").style.opacity = onSaleOpacity;
+	
+	alert(onSale);
 	if(color === "blue" || color === "yellow" || color === "white")
 	{
 		ChangePreviewImage();
@@ -116,7 +121,7 @@ function English()
 	if(currentHtmlPage === "index")
 	{
 		document.getElementById("aboutButtonText").innerHTML = "About Us";
-		document.getElementById("HoodiesText").innerHTML = "Hoodies";
+		document.getElementById("hoodiesText").innerHTML = "Hoodies";
 		document.getElementById("tShirtText").innerHTML = "T-Shirts";
 	}
 	else if(currentHtmlPage === "About")
@@ -140,24 +145,72 @@ function English()
 		document.getElementById("backButtonText").innerHTML = "Back";
 		if(currentSize === "Small")
 		{	
-			if(currentClothing === "Hoodie")
-				document.getElementById("priceText").innerHTML = "74.99 USD";
-			else if(currentClothing === "TShirt")
-				document.getElementById("priceText").innerHTML = "43.99 USD";
+			if(onSale == 0)
+			{
+				if(currentClothing === "Hoodie")
+					document.getElementById("priceText").innerHTML = "74.99 USD";
+				else if(currentClothing === "TShirt")
+					document.getElementById("priceText").innerHTML = "56.99 USD";
+			}
+			else if(onSale == 1)
+			{
+				if(currentClothing === "Hoodie")
+				{
+					document.getElementById("priceText").innerHTML = "61.99 USD";
+					document.getElementById("originalPriceText").innerHTML = "79.99 USD"
+				}
+				else if(currentClothing === "TShirt")
+				{
+					document.getElementById("priceText").innerHTML = "43.99 USD";
+					document.getElementById("originalPriceText").innerHTML = "56.99 USD"
+				}
+			}
 		}
 		else if(currentSize === "Medium")
 		{
-			if(currentClothing === "Hoodie")
-				document.getElementById("priceText").innerHTML = "89.99 USD";
-			else if(currentClothing === "TShirt")
-				document.getElementById("priceText").innerHTML = "49.99 USD";
+			if(onSale == 0)
+			{
+				if(currentClothing === "Hoodie")
+					document.getElementById("priceText").innerHTML = "89.99 USD";
+				else if(currentClothing === "TShirt")
+					document.getElementById("priceText").innerHTML = "59.99 USD";
+			}
+			else if(onSale == 1)
+			{
+				if(currentClothing === "Hoodie")
+				{
+					document.getElementById("priceText").innerHTML = "78.99 USD";
+					document.getElementById("originalPriceText").innerHTML = "99.99 USD"
+				}
+				else if(currentClothing === "TShirt")
+				{
+					document.getElementById("priceText").innerHTML = "47.99 USD";
+					document.getElementById("originalPriceText").innerHTML = "59.99 USD"
+				}
+			}
 		}
 		else if(currentSize === "Large")
 		{
-			if(currentClothing === "Hoodie")
-				document.getElementById("priceText").innerHTML = "109.99 USD";
-			else if(currentClothing === "TShirt")
-				document.getElementById("priceText").innerHTML = "59.99 USD";
+			if(onSale == 0)
+			{
+				if(currentClothing === "Hoodie")
+					document.getElementById("priceText").innerHTML = "109.99 USD";
+				else if(currentClothing === "TShirt")
+					document.getElementById("priceText").innerHTML = "59.99 USD";
+			}
+			else if(onSale == 1)
+			{
+				if(currentClothing === "Hoodie")
+				{
+					document.getElementById("priceText").innerHTML = "92.99 USD";
+					document.getElementById("originalPriceText").innerHTML = "119.99 USD"
+				}
+				else if(currentClothing === "TShirt")
+				{
+					document.getElementById("priceText").innerHTML = "55.99 USD";
+					document.getElementById("originalPriceText").innerHTML = "69.99 USD"
+				}
+			}
 		}
 	}
 	
@@ -229,24 +282,72 @@ function Icelandic()
 		document.getElementById("backButtonText").innerHTML = "Til Baka";
 		if(currentSize === "Small")
 		{	
-			if(currentClothing === "Hoodie")
-				document.getElementById("priceText").innerHTML = "8.999 ISK";
-			else if(currentClothing === "TShirt")
-				document.getElementById("priceText").innerHTML = "5.499 ISK";
+			if(onSale == 0)
+			{
+				if(currentClothing === "Hoodie")
+					document.getElementById("priceText").innerHTML = "8.999 ISK";
+				else if(currentClothing === "TShirt")
+					document.getElementById("priceText").innerHTML = "6.999 ISK";
+			}
+			else if(onSale == 1)
+			{
+				if(currentClothing === "Hoodie")
+				{
+					document.getElementById("priceText").innerHTML = "7.799 ISK";
+					document.getElementById("originalPriceText").innerHTML = "9.999 ISK"
+				}
+				else if(currentClothing === "TShirt")
+				{
+					document.getElementById("priceText").innerHTML = "5.499 ISK";
+					document.getElementById("originalPriceText").innerHTML = "6.999 ISK"
+				}
+			}
 		}
 		else if(currentSize === "Medium")
 		{
-			if(currentClothing === "Hoodie")
-				document.getElementById("priceText").innerHTML = "10.999 ISK";
-			else if(currentClothing === "TShirt")
-				document.getElementById("priceText").innerHTML = "6.499 ISK";
+			if(onSale == 0)
+			{
+				if(currentClothing === "Hoodie")
+					document.getElementById("priceText").innerHTML = "10.999 ISK";
+				else if(currentClothing === "TShirt")
+					document.getElementById("priceText").innerHTML = "7.999 ISK";
+			}
+			else if(onSale == 1)
+			{
+				if(currentClothing === "Hoodie")
+				{
+					document.getElementById("priceText").innerHTML = "9.399 ISK";
+					document.getElementById("originalPriceText").innerHTML = "11.999 ISK"
+				}
+				else if(currentClothing === "TShirt")
+				{
+					document.getElementById("priceText").innerHTML = "5.999 ISK";
+					document.getElementById("originalPriceText").innerHTML = "7.999 ISK"
+				}
+			}
 		}
 		else if(currentSize === "Large")
 		{
-			if(currentClothing === "Hoodie")
-				document.getElementById("priceText").innerHTML = "13.999 ISK";
-			else if(currentClothing === "TShirt")
-				document.getElementById("priceText").innerHTML = "7.499 ISK";
+			if(onSale == 0)
+			{
+				if(currentClothing === "Hoodie")
+					document.getElementById("priceText").innerHTML = "13.999 ISK";
+				else if(currentClothing === "TShirt")
+					document.getElementById("priceText").innerHTML = "8.999 ISK";
+			}
+			else if(onSale == 1)
+			{
+				if(currentClothing === "Hoodie")
+				{
+					document.getElementById("priceText").innerHTML = "11.699 ISK";
+					document.getElementById("originalPriceText").innerHTML = "14.999 ISK"
+				}
+				else if(currentClothing === "TShirt")
+				{
+					document.getElementById("priceText").innerHTML = "6.999 ISK";
+					document.getElementById("originalPriceText").innerHTML = "8.999 ISK"
+				}
+			}
 		}
 		
 		//Info
@@ -319,24 +420,72 @@ function Danish()
 		document.getElementById("backButtonText").innerHTML = "Tilbage";
 		if(currentSize === "Small")
 		{	
-			if(currentClothing === "Hoodie")
-				document.getElementById("priceText").innerHTML = "499 DDK";
-			else if(currentClothing === "TShirt")
-				document.getElementById("priceText").innerHTML = "299 DDK";
+			if(onSale == 0)
+			{
+				if(currentClothing === "Hoodie")
+					document.getElementById("priceText").innerHTML = "479 DKK";
+				else if(currentClothing === "TShirt")
+					document.getElementById("priceText").innerHTML = "369 DKK";
+			}
+			else if(onSale == 1)
+			{
+				if(currentClothing === "Hoodie")
+				{
+					document.getElementById("priceText").innerHTML = "419 DKK";
+					document.getElementById("originalPriceText").innerHTML = "529 DKK"
+				}
+				else if(currentClothing === "TShirt")
+				{
+					document.getElementById("priceText").innerHTML = "289 DKK";
+					document.getElementById("originalPriceText").innerHTML = "369 DKK"
+				}
+			}
 		}
 		else if(currentSize === "Medium")
 		{
-			if(currentClothing === "Hoodie")
-				document.getElementById("priceText").innerHTML = "599 DDK";
-			else if(currentClothing === "TShirt")
-				document.getElementById("priceText").innerHTML = "349 DDK";
+			if(onSale == 0)
+			{
+				if(currentClothing === "Hoodie")
+					document.getElementById("priceText").innerHTML = "579 DKK";
+				else if(currentClothing === "TShirt")
+					document.getElementById("priceText").innerHTML = "429 DKK";
+			}
+			else if(onSale == 1)
+			{
+				if(currentClothing === "Hoodie")
+				{
+					document.getElementById("priceText").innerHTML = "529 DKK";
+					document.getElementById("originalPriceText").innerHTML = "629 DKK"
+				}
+				else if(currentClothing === "TShirt")
+				{
+					document.getElementById("priceText").innerHTML = "339 DKK";
+					document.getElementById("originalPriceText").innerHTML = "429 DKK"
+				}
+			}
 		}
 		else if(currentSize === "Large")
 		{
-			if(currentClothing === "Hoodie")
-				document.getElementById("priceText").innerHTML = "759 DDK";
-			else if(currentClothing === "TShirt")
-				document.getElementById("priceText").innerHTML = "399 DDK";
+			if(onSale == 0)
+			{
+				if(currentClothing === "Hoodie")
+					document.getElementById("priceText").innerHTML = "739 DKK";
+				else if(currentClothing === "TShirt")
+					document.getElementById("priceText").innerHTML = "469 DKK";
+			}
+			else if(onSale == 1)
+			{
+				if(currentClothing === "Hoodie")
+				{
+					document.getElementById("priceText").innerHTML = "619 DKK";
+					document.getElementById("originalPriceText").innerHTML = "789 DKK"
+				}
+				else if(currentClothing === "TShirt")
+				{
+					document.getElementById("priceText").innerHTML = "369 DKK";
+					document.getElementById("originalPriceText").innerHTML = "469 DKK"
+				}
+			}
 		}
 		
 		//Info

@@ -6,6 +6,8 @@ var index;
 var imageIndex;
 var arrowOpacity;
 var previewImageUrl;
+var onSale;
+var onSaleOpacity;
 
 function SetClothing(clothing)
 {
@@ -170,32 +172,46 @@ for(i = 1;i<7;i++)
 		{
 			color = "blue";
 			arrowOpacity = 1;
+			onSale = 0;
+			onSaleOpacity = 0;
 		}
 		else if(index === "cell2")
 		{
 			color = "yellow";
 			arrowOpacity = 1;
+			onSale = 1;
+			onSaleOpacity = 0.6;
 		}
 		else if(index === "cell3")
 		{
 			color = "white";
 			arrowOpacity = 1;
+			onSale = 0;
+			onSaleOpacity = 0;
 		}
 		else if(index === "cell4")
 		{
 			color = "black";
 			arrowOpacity = 0;
+			onSale = 0;
+			onSaleOpacity = 0;
 		}
 		else if(index === "cell5")
 		{
 			color = "white";
 			arrowOpacity = 1;
+			onSale = 0;
+			onSaleOpacity = 0;
 		}
 		else if(index === "cell6")
 		{
 			color = "black";
 			arrowOpacity = 0;
+			onSale = 0;
+			onSaleOpacity = 0;
 		}
+		sessionStorage.setItem("onSaleOpacityKey", onSaleOpacity);
+		sessionStorage.setItem("onSaleKey", onSale);
 		sessionStorage.setItem("arrowOpacityKey", arrowOpacity);
 		sessionStorage.setItem("colorKey", color);
 		sessionStorage.setItem("urlKey", url);

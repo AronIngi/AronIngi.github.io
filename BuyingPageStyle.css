@@ -140,15 +140,37 @@ a
 #price
 {	
 	position: absolute;
-    top: 33%;
+    top: 45%;
     left: 50%;
     transform: translate(0%,0%);
+}
+
+#originalPriceText
+{
+	font-size:1.2vw;
+	width:50%;
+	opacity:0.6;
+	text-decoration:line-through;
+	position:absolute;
+    top: -19%;
+    left: 3vw;
+    transform: translate(50%,0%);
 }
 
 #priceText
 {
 	font-size:2.5vw;
 	font-family:Helvetica;
+}
+
+#offPercentage
+{
+	font-size: 4vw;
+	opacity:0.6;
+    position: absolute;
+    top: -37%;
+    left: -13%;
+    transform: translate(50%,0%);
 }
 
 #small
@@ -177,6 +199,8 @@ a
 {
 	width:3vw;
 	position:absolute;
+	top:0%;
+	left:40%;
 	transform: translate(-15%,201%);
 }
 
@@ -184,6 +208,8 @@ a
 {
 	width:3vw;
 	position:absolute;
+	top:0%;
+	left:40%;
     transform: translate(-510%,201%);
 
 }

@@ -171,6 +171,18 @@ a
 	transform:translate(20%, 10%);
 }
 
+#offPercentage
+{
+	font-size:4vw;
+	font-size: 4vw;
+	opacity:0.6;
+    position: absolute;
+    top: -50%;
+    left: 21%;
+    transform: translate(50%,0%);
+	
+}
+
 #logo
 {	
 	width:4.5%;
