@@ -23,7 +23,7 @@ a
 
 #body
 {
-	background-color: rgb(240,240,240);
+    background-color: rgb(240,240,240);
     width: 53.2vw;
     height: 148vh;
     position: absolute;
@@ -63,8 +63,7 @@ a
 	font-family:Helvetica;
 	font-size:2.2vw;
 	position:relative;
-	right:0.5%;
-	transform:translate(0%, -50%);
+	right:-0.5%;
 }
 
 #tShirtText
@@ -72,8 +71,7 @@ a
 	font-family:Helvetica;
 	font-size:2.2vw;
 	position:relative;
-	right:0.5%;
-	transform: translate(0%, -500%);
+	right:-0.5%;
 }
 
 .border
@@ -81,46 +79,41 @@ a
 	background-color:rgb(210,210,210);
 }
 
+li
+{
+	position: relative;
+    left: 1%;
+}
+
+
 #c1B
 {
 	height:33vh;
-    position: absolute;
-    transform: translate(-1%,-9%);
 }
 
 #c2B
 {
 	height:33vh;
-	position: absolute;
-    transform: translate(105%,-9%);
 }
 
 #c3B
 {
 	height:33vh;
-	position: absolute;
-    transform: translate(210%,-9%);
 }
 
 #c4B
 {
 	height:33vh;
-	position: absolute;
-    transform: translate(-17%,116%);
 }
 
 #c5B
 {
 	height:33vh;
-    position: absolute;
-	transform: translate(-1%, -76%);
 }
 
 #c6B
 {
 	height:33vh;
-    position: absolute;
-    transform: translate(105%,-76%);
 }
 
 #cell1
