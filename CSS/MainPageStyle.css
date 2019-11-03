@@ -53,7 +53,7 @@ a
 {
 	width: 42vw;
     position: absolute;
-    bottom: 12vh;
+	bottom: 12vh;
     left: 50.2%;
     transform: translate(-44%, 0);
 }
@@ -116,52 +116,13 @@ li
 	max-height:35vh;
 }
 
-#cell1
-{	
-	position:relative;
-	width:12vw;
-	left: 2%;
-    top: 10%;
-}
-
-#cell2
+.cimage
 {
 	position:relative;
 	width:12vw;
 	left: 2%;
-    top: 10%;
-}
-
-#cell3
-{
-	position:relative;
-	width:12vw;
-	left: 2%;
-    top: 10%;
-}
-
-#cell4
-{
-	position:relative;
-	width:12vw;
-	left: 2%;
-    top: 10%;
-}
-
-#cell5
-{
-	position:relative;
-	width:12vw;
-	left: 2%;
-    top: 10%;
-}
-
-#cell6
-{
-	position:relative;
-	width:12vw;
-	left: 2%;
-    top: 10%;
+	top: 10%;
+	padding: 5%;
 }
 
 #offPercentageM
@@ -191,7 +152,7 @@ li
 {
 	position:absolute;
 	width:12%;
-	top:0;
+	top:16%;
 	right:2%;
 }
 
@@ -201,10 +162,6 @@ li
 	font-size:2.5vw;
 	color:white;
 	position: relative;
-	top: 50%;
-	left: 50%;
-  
-	transform: translate(-40%, 0%);
 }
 
 #language
