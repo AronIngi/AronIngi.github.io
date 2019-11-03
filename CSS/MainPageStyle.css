@@ -88,80 +88,80 @@ li
 
 #c1B
 {
-	height:33vh;
+	max-height:35vh;
 }
 
 #c2B
 {
-	height:33vh;
+	max-height:35vh;
 }
 
 #c3B
 {
-	height:33vh;
+	max-height:35vh;
 }
 
 #c4B
 {
-	height:33vh;
+	max-height:35vh;
 }
 
 #c5B
 {
-	height:33vh;
+	max-height:35vh;
 }
 
 #c6B
 {
-	height:33vh;
+	max-height:35vh;
 }
 
 #cell1
 {	
 	position:relative;
 	width:12vw;
-	left:-20%;
-	transform: translate(20%, 10%);
+	left: 2%;
+    top: 10%;
 }
 
 #cell2
 {
 	position:relative;
 	width:12vw;
-	left:-20%;
-	transform:translate(20%, 10%);
+	left: 2%;
+    top: 10%;
 }
 
 #cell3
 {
 	position:relative;
 	width:12vw;
-	left:-20%;
-	transform:translate(20%, 10%);
+	left: 2%;
+    top: 10%;
 }
 
 #cell4
 {
 	position:relative;
 	width:12vw;
-	left:-20%;
-	transform: translate(20%, 10%);
+	left: 2%;
+    top: 10%;
 }
 
 #cell5
 {
 	position:relative;
 	width:12vw;
-	left:-20%;
-	transform:translate(20%, 10%);
+	left: 2%;
+    top: 10%;
 }
 
 #cell6
 {
 	position:relative;
 	width:12vw;
-	left:-20%;
-	transform:translate(20%, 10%);
+	left: 2%;
+    top: 10%;
 }
 
 #offPercentageM
@@ -170,8 +170,8 @@ li
 	font-size: 4vw;
 	opacity:0.6;
     position: absolute;
-    top: -50%;
-    left: 21%;
+    top: 67%;
+    left: -34%;
     transform: translate(50%,0%);
 	
 }
