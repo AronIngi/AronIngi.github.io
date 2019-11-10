@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html onwheel="Scroll(event)">
 	<head>
 		<title>TC Clothing</title>
 		<link rel="stylesheet" href="CSS/MainPageStyle.css">
@@ -8,9 +8,9 @@
 		<meta charset="UTF-8">
 	</head>
 	<body onload="onLoadMain()">
-		<div class="container">
-			<div id="body">
-				<div id="images">
+			<div id="body"></div>
+				<ul class="list-vertical" id="list-super">
+					<li class="list-vertical-item">
 					<div id="hoodies">
 						<h1 id="hoodiesText">Hoodies</h1>
 							<ul class="list-inline">
@@ -48,6 +48,8 @@
 								</li>
 							</ul>
 					</div>
+					</li>
+				<li class="list-vertical-item">
 					<div id="tShirts">
 						<h1 id="tShirtText">T-Shirts</h1>
 						<ul class="list-inline">
@@ -67,9 +69,8 @@
 							</li>						
 						</ul>
 					</div>
-				</div>
-			</div>
-		</div>
+				</li>
+				</ul>
 		
 		<div class="container">
 			<div id="navigationBar">
@@ -90,5 +91,6 @@
 		</div>
 		<script src="LanguageManager.js"></script>
 		<script src="BuyingManager.js"></script>
+		<script src="ScrollManager.js"></script>
 	</body>
 </html>

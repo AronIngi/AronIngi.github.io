@@ -7,6 +7,17 @@ body::-webkit-scrollbar
     width: 0px;
 }
 
+.list-inline-item
+{
+	margin-right: 1% !important;
+	margin-bottom: 1%;
+}
+
+.list-inline
+{
+	margin-bottom: 0 !important;
+}
+
 a
 {
 	text-decoration:none;
@@ -15,7 +26,7 @@ a
 #navigationBar
 {
 	background-color:rgb(0,0,0);
-	position:absolute;
+	position: fixed;
 	top:0;
 	right:0;
 	left:0;
@@ -23,12 +34,11 @@ a
 
 #body
 {
-    background-color: rgb(240,240,240);
+	background-color: rgb(240,240,240);
     width: 53.2vw;
-    height: 148vh;
-    position: absolute;
-    top: 58vh;
-    bottom: -2vh;
+    height: 100%;
+    position: fixed;
+    bottom: 0;
     right: 50%;
     margin: auto;
     transform: translate(50%, 0%);
@@ -40,22 +50,14 @@ a
 	transform:translate(50%, 0);
 }
 
-#hoodies
+.list-vertical-item
 {
 	width: 42vw;
-    position: absolute;
-    top: 8vw;
+	position: relative;
+	top: 8vw;
     left: 50%;
-    transform: translate(-44%, 0);
-}
-
-#tShirts
-{
-	width: 42vw;
-    position: absolute;
-	bottom: 12vh;
-    left: 50.2%;
-    transform: translate(-44%, 0);
+	transform: translate(-50%, 0);
+	list-style: none;
 }
 
 #hoodiesText
@@ -63,7 +65,7 @@ a
 	font-family:Helvetica;
 	font-size:2.2vw;
 	position:relative;
-	right:-0.5%;
+	right:0%;
 }
 
 #tShirtText
@@ -71,7 +73,7 @@ a
 	font-family:Helvetica;
 	font-size:2.2vw;
 	position:relative;
-	right:-0.5%;
+	right:0%;
 }
 
 .border
@@ -82,7 +84,6 @@ a
 li
 {
 	position: relative;
-    left: 1%;
 }
 
 
@@ -127,19 +128,21 @@ li
 
 #offPercentageM
 {
+	pointer-events: none;
 	font-size:4vw;
 	font-size: 4vw;
 	opacity:0.6;
     position: absolute;
     top: 67%;
     left: -34%;
-    transform: translate(50%,0%);
+	transform: translate(50%,0%);
 	
 }
 
 #logo
 {	
-	width:4.5%;
+	margin: 0.3%;
+	width:3.5%;
 	position: relative;
 	top: 50%;
 	left: 50%;
