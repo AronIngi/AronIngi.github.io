@@ -12,7 +12,7 @@ body::-webkit-scrollbar {
 #navigationBar
 {
 	background-color:rgb(0,0,0);
-	position:absolute;
+	position:fixed;
 	top:0;
 	right:0;
 	left:0;
@@ -20,22 +20,34 @@ body::-webkit-scrollbar {
 
 #body
 {
-	background-color:rgb(240,240,240);
 	width:53.2%;
-	height:204vh;
+	height:100%;
 	position:absolute;
-	top:119%;
-	bottom:0%;
+	top:8vw;
 	right:50%;
 	margin:auto;
 	
 	transform:translate(50%, 0%);
 }
 
+#backgroundBody
+{
+	background-color: rgb(240, 240, 240);
+	width:53.2%;
+	height:100%;
+	position:fixed;
+	top:0;
+	bottom:0%;
+	right:50%;
+	margin:auto;
+	
+	transform:translate(50%, 0%);	
+}
 
 #logo
 {	
-	width:4.5%;
+	margin: 0.3%;
+	width:3.5%;
 	position: relative;
 	top: 50%;
 	left: 50%;
