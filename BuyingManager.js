@@ -162,7 +162,7 @@ function ChangePreviewImage()
 	}
 }
 
-for(i = 1;i<7;i++)
+for(i = 1;i<document.getElementsByClassName("cimage").length;i++)
 {
 	document.getElementById("cell" + i).addEventListener("click", function(e)
 	{
