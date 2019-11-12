@@ -4,7 +4,7 @@ var currentHtmlPage;
 function ChangeLanguage(languageIndex)
 {	
 	language = languageIndex
-	sessionStorage.setItem("languageKey", language);
+	localStorage.setItem("languageKey", language);
 	if(language === 1)
 	{
 		// English
@@ -28,12 +28,12 @@ function currentPage(page)
 }
 function onLoadMain()
 {	
-	language = sessionStorage.getItem("languageKey");
+	language = localStorage.getItem("languageKey");
 	currentPage("index");
 	if(language == null)
 	{
 		language = 1;
-		sessionStorage.setItem("languageKey", language);
+		localStorage.setItem("languageKey", language);
 	}
 	if(language == 1)
 	{
@@ -53,7 +53,7 @@ function onLoadMain()
 }
 function onLoadAbout()
 {	
-	language = sessionStorage.getItem("languageKey");
+	language = localStorage.getItem("languageKey");
 	currentPage("About");
 	if(language == 1)
 	{
@@ -74,16 +74,16 @@ function onLoadAbout()
 function onLoadBuying()
 {	
 	imageIndex = 1;
-	url = sessionStorage.getItem("urlKey");
-	previewImageUrl = sessionStorage.getItem("previewImageKey");
-	language = sessionStorage.getItem("languageKey");	
+	url = localStorage.getItem("urlKey");
+	previewImageUrl = localStorage.getItem("previewImageKey");
+	language = localStorage.getItem("languageKey");	
 	currentPage("Buying");
-	currentClothing = sessionStorage.getItem("clothingKey");
-	color = sessionStorage.getItem("colorKey");
+	currentClothing = localStorage.getItem("clothingKey");
+	color = localStorage.getItem("colorKey");
 	ss();
-	arrowOpacity = sessionStorage.getItem("arrowOpacityKey");
-	onSale = sessionStorage.getItem("onSaleKey");
-	onSaleOpacity = sessionStorage.getItem("onSaleOpacityKey");
+	arrowOpacity = localStorage.getItem("arrowOpacityKey");
+	onSale = localStorage.getItem("onSaleKey");
+	onSaleOpacity = localStorage.getItem("onSaleOpacityKey");
 	document.getElementById("rightArrow").style.opacity = arrowOpacity;
 	document.getElementById("leftArrow").style.opacity = arrowOpacity;
 	document.getElementById("originalPriceText").style.opacity = onSaleOpacity;

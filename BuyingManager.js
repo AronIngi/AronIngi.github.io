@@ -12,7 +12,7 @@ var onSaleOpacity;
 function SetClothing(clothing)
 {
 	currentClothing = clothing;
-	sessionStorage.setItem("clothingKey", currentClothing);
+	localStorage.setItem("clothingKey", currentClothing);
 }
 
 function Sizes(path)
@@ -79,7 +79,7 @@ function ss()
 			document.getElementById("previewImage").src = previewImageUrl;
 			});
 	}
-	sessionStorage.setItem("previewImageKey",previewImageUrl);
+	localStorage.setItem("previewImageKey",previewImageUrl);
 }
 
 function ChangePreviewImage()
@@ -164,7 +164,7 @@ function ChangePreviewImage()
 
 for(i = 1;i<document.getElementsByClassName("cimage").length;i++)
 {
-	document.getElementById("cell" + i).addEventListener("click", function(e)
+	document.getElementById("cell" + i).addEventListener("mouseover", function(e)
 	{
 		url = e.target.src;
 		index = e.target.id;
@@ -210,11 +210,10 @@ for(i = 1;i<document.getElementsByClassName("cimage").length;i++)
 			onSale = 0;
 			onSaleOpacity = 0;
 		}
-		sessionStorage.setItem("onSaleOpacityKey", onSaleOpacity);
-		sessionStorage.setItem("onSaleKey", onSale);
-		sessionStorage.setItem("arrowOpacityKey", arrowOpacity);
-		sessionStorage.setItem("colorKey", color);
-		sessionStorage.setItem("urlKey", url);
+		localStorage.setItem("onSaleOpacityKey", onSaleOpacity);
+		localStorage.setItem("onSaleKey", onSale);
+		localStorage.setItem("arrowOpacityKey", arrowOpacity);
+		localStorage.setItem("colorKey", color);
+		localStorage.setItem("urlKey", url);
 	});
 }
-
