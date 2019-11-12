@@ -26,6 +26,9 @@ function currentPage(page)
 {
 	currentHtmlPage = page;
 }
+
+
+
 function onLoadMain()
 {	
 	language = localStorage.getItem("languageKey");
@@ -55,6 +58,10 @@ function onLoadAbout()
 {	
 	language = localStorage.getItem("languageKey");
 	currentPage("About");
+	if(language == null)
+	{
+		language = 1;
+	}
 	if(language == 1)
 	{
 		// English
@@ -98,6 +105,10 @@ function onLoadBuying()
 		document.getElementById("previewImage").src = url;
 	}
 	document.getElementById("medium").src = "Myndir/MediumDark.png";
+	if(language == null)
+	{
+		language = 1;
+	}
 	if(language == 1)
 	{
 		// English
@@ -527,4 +538,3 @@ function Danish()
 		}
 	}
 }
-
