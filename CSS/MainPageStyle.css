@@ -50,6 +50,12 @@ a
 	transform:translate(50%, 0);
 }
 
+#list-super
+{
+	margin: 0;
+	padding: 0;
+}
+
 .list-vertical-item
 {
 	width: 42vw;
